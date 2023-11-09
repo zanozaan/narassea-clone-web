@@ -1,42 +1,47 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
 import Image from "next/image";
-import img6 from "../../assets/Image/img6.svg"
-import pausIcon from "../../assets/Image/paus.svg"
+import pausIcon from "../../assets/Image/paus.svg";
+import dotsHIcon from "../../assets/Icon Web/Dots_H.svg";
 
-
-const Header = () => {
+const Header = ({ card }) => {
   return (
-    <div><div className="flex items-center gap-2">
-    <div className="profile-user">
-      <Image
-        src={img6}
-        alt="user"
-        width={48}
-        height={48}
-        className="border border-1 rounded-full"
-      />
-    </div>
-    <div>
-      <div className="username flex gap-2">
-        <div>
-          <h4 className="font-bold color-[#111827]">Steven David</h4>
+    <div className="flex justify-between">
+      <div className="flex items-center gap-2 mb-4">
+        <div className="profile-user">
+          <Image
+            src={card.userimg}
+            alt="user"
+            width={48}
+            height={48}
+            className="border border-1 rounded-full"
+          />
         </div>
         <div>
-          <h5 className="text-[#6B7280]">@stevendavid</h5>
-        </div>
-        <div className="rounded-full bg-[#59DCEE] text-xs w-[73px] h-5 flex items-center justify-center">
-          <Image src={pausIcon} alt='log'/>
-          <h6 className='text-white'>narwhal</h6>
+          <div className="username flex gap-2">
+            <div>
+              <h4 className="font-bold color-[#111827]">{card.name}</h4>
+            </div>
+            <div>
+              <h5 className="text-[#6B7280]">{card.username}</h5>
+            </div>
+            <div className="rounded-full bg-[#59DCEE] text-xs w-[73px] h-5 flex items-center justify-center">
+              <Image src={pausIcon} alt="log" />
+              <h6 className="text-white">narwhal</h6>
+            </div>
+          </div>
+          <div className="date">
+            <p className="text-xs text-[#6B7280]">September 02 2023, 03:04pm</p>
+          </div>
         </div>
       </div>
-      <div className="date">
-        <p className="text-xs text-[#6B7280]">
-          September 02 2023, 03:04pm
-        </p>
+      <div>
+        <Link href="#">
+          <Image src={dotsHIcon} alt="dotsH" />
+        </Link>
       </div>
     </div>
-  </div></div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

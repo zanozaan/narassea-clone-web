@@ -14,9 +14,9 @@ const Navbar = () => {
   return (
     <div className=" py-7 bg-white border-[1px] flex justify-evenly content-center items-center sticky top-0 z-20    ">
       {/* LOGO */}
-      <div className="max-w-[350px] clearfix bshadow0 pbs">
-        <span className="icon-Narrasea_PUTIH_TEXT"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span><span className="path5"></span><span className="path6"></span><span className="path7"></span><span className="path8"></span><span className="path9"></span><span className="path10"></span><span className="path11"></span><span className="path12"></span><span className="path13"></span></span>  
-      </div>
+      <Link href="#">
+        <Image src={Logo} alt="logo" width={200} height={43} />
+      </Link>
 
       {/* MENU NAVIGATION */}
       <div className="flex justify-between content-center">
@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="pr-[126px]">
           <button
             type="button"
-            className="focus:outline-none text-white bg-[#6366F1] font-medium w-[96px] h-[32px] rounded-full rounded-bl-none text-sm px-5 py-2.5"
+            className="focus:outline-none text-white bg-[#6366F1] font-medium w-[96px] h-[32px] rounded-full rounded-bl-none text-sm px-5 py-2.5 flex justify-center content-center items-center"
           >
             Post
           </button>
@@ -57,7 +57,12 @@ const Navbar = () => {
             <Image src={MessageIcon} alt="message" width={24} height={24} />
           </Link>
           <Link href="#">
-            <Image src={NotificationIcon} alt="notification" width={24} height={24} />
+            <Image
+              src={NotificationIcon}
+              alt="notification"
+              width={24}
+              height={24}
+            />
           </Link>
           <Link href="#">
             <Image src={img7} alt="profile" width={28} height={28} />

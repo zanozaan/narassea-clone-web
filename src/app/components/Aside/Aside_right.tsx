@@ -4,65 +4,98 @@ import Link from "next/link";
 import VerifiedIcon from "../../assets/Icon Web/Verified_Blue_Icon.svg";
 import CommentIcon from "../../assets/Icon Web/Comment_Icon.svg";
 import LoveIcon from "../../assets/Icon Web/LoveHeart_Icon.svg";
-import asideR_img1 from "../../assets/Image/asideR_img1.svg"
-import asideR_img2 from "../../assets/Image/asideR_img2.svg"
-import kepitingIcon from "../../assets/Image/kepiting.svg"
+import asideR_img1 from "../../assets/Image/asideR_img1.svg";
+import asideR_img2 from "../../assets/Image/asideR_img2.svg";
+import kepitingIcon from "../../assets/Image/kepiting.svg";
+import DotsVIcon from "../../assets/Icon Web/Dots_V.svg";
 
 const Aside_right = () => {
   return (
-    <div className="max-w-[350px] my-5 sticky top-0 right-0 h-screen">
+    <div className="my-5 sticky top-0 right-0 h-screen">
       {/* Suggested Trends */}
       <div>
         <div className="bg-[#F7F9FA] rounded-2xl w-[350px] p-6">
           <header>
-            <h2 className="font-semibold text-lg">Trends for you</h2>
+            <h2 className="font-bold text-lg">Trends for you</h2>
           </header>
           <div className="container-card py-4 flex flex-col gap-10">
-            <div className="card flex flex-col gap-1">
-              <div className="flex gap-10">
-                <p className="text-[#5B7083] text-xs">Trending in World</p>
+            <div className="flex justify-between">
+              <div className="card flex flex-col gap-1">
+                <div className="flex gap-10">
+                  <p className="text-[#5B7083] text-xs">Trending in World</p>
+                </div>
+                <div className="title">
+                  <h3 className="font-bold">#DEFiNFTs</h3>
+                </div>
+                <>
+                  <p className="text-[#5B7083] text-xs">1,357,255 Tweets</p>
+                </>
               </div>
-              <div className="title">
-                <h3 className="font-semibold">#DEFiNFTs</h3>
+              <div>
+                <Link href="#">
+                  <Image src={DotsVIcon} alt="dotsV" />
+                </Link>
               </div>
-              <>
-                <p className="text-[#5B7083] text-xs">1,357,255 Tweets</p>
-              </>
             </div>
-            <div className="card flex flex-col gap-1">
-              <div className="flex gap-10">
-                <p className="text-[#5B7083] text-xs">Trending in World</p>
+            <div className="flex justify-between">
+              <div className="card flex flex-col gap-1">
+                <div className="flex gap-10">
+                  <p className="text-[#5B7083] text-xs">Trending in World</p>
+                </div>
+                <div className="title">
+                  <h3 className="font-bold">NFT Art Boom</h3>
+                </div>
+                <>
+                  <p className="text-[#5B7083] text-xs">925,523 Tweets</p>
+                </>
               </div>
-              <div className="title">
-                <h3 className="font-semibold">NFT Art Boom</h3>
+              <div>
+                <Link href="#">
+                  <Image src={DotsVIcon} alt="dotsV" />
+                </Link>
               </div>
-              <>
-                <p className="text-[#5B7083] text-xs">925,523 Tweets</p>
-              </>
             </div>
-            <div className="card flex flex-col gap-1">
-              <div className="flex gap-10">
-                <p className="text-[#5B7083] text-xs">Trending in World</p>
+            <div className="flex justify-between">
+              <div className="card flex flex-col gap-1">
+                <div className="flex gap-10">
+                  <p className="text-[#5B7083] text-xs">
+                    Trending in Indonesia
+                  </p>
+                </div>
+                <div className="title">
+                  <h3 className="font-bold">Al Ghozali</h3>
+                </div>
+                <>
+                  <p className="text-[#5B7083] text-xs">743,856 Tweets</p>
+                </>
               </div>
-              <div className="title">
-                <h3 className="font-semibold">Al Ghozali</h3>
+              <div>
+                <Link href="#">
+                  <Image src={DotsVIcon} alt="dotsV" />
+                </Link>
               </div>
-              <>
-                <p className="text-[#5B7083] text-xs">743,856 Tweets</p>
-              </>
             </div>
-            <div className="card flex flex-col gap-1">
-              <div className="flex gap-10">
-                <p className="text-[#5B7083] text-xs">Trending in World</p>
+            <div className="flex justify-between">
+              <div className="card flex flex-col gap-1">
+                <div className="flex gap-10">
+                  <p className="text-[#5B7083] text-xs">
+                    Trending in Indonesia
+                  </p>
+                </div>
+                <div className="title">
+                  <h3 className="font-bold">Whales vs Sharks</h3>
+                </div>
+                <>
+                  <p className="text-[#5B7083] text-xs">734,854 Tweets</p>
+                </>
               </div>
-              <div className="title">
-                <h3 className="font-semibold">Whales vs Sharks</h3>
+              <div>
+                <Link href="#">
+                  <Image src={DotsVIcon} alt="dotsV" />
+                </Link>
               </div>
-              <>
-                <p className="text-[#5B7083] text-xs">723,854 Tweets</p>
-              </>
             </div>
-  
+
             <div>
               <h3 className="text-[#6366F1] text-base font-bold">
                 <a href="">Show more</a>
@@ -82,13 +115,7 @@ const Aside_right = () => {
             {/* User */}
             <div className="flex gap-2">
               <div className="profile-user">
-                <Image
-                  src={asideR_img1}
-                  alt="user"
-                  width={48}
-                  height={48}
-                  
-                />
+                <Image src={asideR_img1} alt="user" width={48} height={48} />
               </div>
               <div>
                 <div className="username flex gap-2">
@@ -100,7 +127,7 @@ const Aside_right = () => {
                       <Image src={VerifiedIcon} alt="verified" />
                     </div>
                     <div>
-                      <Image src={kepitingIcon} alt="icon"/>
+                      <Image src={kepitingIcon} alt="icon" />
                     </div>
                   </div>
                 </div>
@@ -113,23 +140,28 @@ const Aside_right = () => {
             {/* Caption */}
             <div>
               <p>
-                Own Assets in Games: Become the owner of 
-                rare assets in your favorite video games. Play 
-                games while building your NFT portfolio.
+                Own Assets in Games: Become the owner of rare assets in your
+                favorite video games. Play games while building your NFT
+                portfolio.
               </p>
             </div>
             {/* Comment */}
             <div className="flex justify-start content-center gap-5">
               <div>
-                <Link href="#" className='flex gap-2'>
-                  <Image src={LoveIcon} alt="love" width={18} height={18}/>
-                  <p className='text-[#5B7083]'>523</p>
+                <Link href="#" className="flex gap-2">
+                  <Image src={LoveIcon} alt="love" width={18} height={18} />
+                  <p className="text-[#5B7083]">523</p>
                 </Link>
               </div>
               <div>
-                <Link href="#" className='flex gap-2'>
-                  <Image src={CommentIcon} alt="comment" width={18} height={18} />
-                  <p className='text-[#5B7083]'>24</p>
+                <Link href="#" className="flex gap-2">
+                  <Image
+                    src={CommentIcon}
+                    alt="comment"
+                    width={18}
+                    height={18}
+                  />
+                  <p className="text-[#5B7083]">24</p>
                 </Link>
               </div>
             </div>
@@ -138,13 +170,7 @@ const Aside_right = () => {
             {/* User */}
             <div className="flex gap-2">
               <div className="profile-user">
-                <Image
-                  src={asideR_img2}
-                  alt="user"
-                  width={48}
-                  height={48}
-                  
-                />
+                <Image src={asideR_img2} alt="user" width={48} height={48} />
               </div>
               <div>
                 <div className="username flex gap-2">
@@ -156,7 +182,7 @@ const Aside_right = () => {
                       <Image src={VerifiedIcon} alt="verified" />
                     </div>
                     <div>
-                      <Image src={kepitingIcon} alt="icon"/>
+                      <Image src={kepitingIcon} alt="icon" />
                     </div>
                   </div>
                 </div>
@@ -177,15 +203,20 @@ const Aside_right = () => {
             {/* Comment */}
             <div className="flex justify-start content-center gap-5">
               <div>
-                <Link href="#" className='flex gap-2'>
-                  <Image src={LoveIcon} alt="love" width={18} height={18}/>
-                  <p className='text-[#5B7083]'>852</p>
+                <Link href="#" className="flex gap-2">
+                  <Image src={LoveIcon} alt="love" width={18} height={18} />
+                  <p className="text-[#5B7083]">852</p>
                 </Link>
               </div>
               <div>
-                <Link href="#" className='flex gap-2'>
-                  <Image src={CommentIcon} alt="comment" width={18} height={18} />
-                  <p className='text-[#5B7083]'>77</p>
+                <Link href="#" className="flex gap-2">
+                  <Image
+                    src={CommentIcon}
+                    alt="comment"
+                    width={18}
+                    height={18}
+                  />
+                  <p className="text-[#5B7083]">77</p>
                 </Link>
               </div>
             </div>
