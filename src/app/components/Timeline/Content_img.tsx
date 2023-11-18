@@ -6,12 +6,11 @@ const Content_img = ({ card }) => {
     <div className="">
       {card.img && (
         <div className="content-img">
-          <Image src={card.img} alt="content" className="object-contain" />
+          <Image src={card.img} alt="content" className="w-full rounded" />
         </div>
       )}
       {/* CAPTION */}
-      <div className="desc-img my-4 max-w-[83%]">
-        <h6>{`Title: "The Adorable Encounter"`}</h6>
+      <div className="desc-img my-4">
         <p>{card.caption}</p>
       </div>
     </div>

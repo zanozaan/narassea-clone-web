@@ -10,19 +10,19 @@ import kepitingIcon from "../../assets/Image/kepiting.svg";
 
 const Aside_left = () => {
   return (
-    <div className="my-5 sticky top-0 left-0 h-screen">
-      <div className="bg-[#F7F9FA] rounded-2xl w-[350px] p-6">
+    <div className="col-span-1 sticky top-0 left-0 h-screen">
+      <div className="bg-slate-50 rounded-2xl  p-6">
         {/* Suggest Blog */}
         <div>
           <header>
             <h2 className="font-bold text-lg">{`Narassea's Blog`}</h2>
           </header>
-          <div className="container-card py-4 flex flex-col justify-center gap-10">
+          <div className="container-card py-4 flex flex-col justify-center gap-5">
             <div className="card flex">
               <div className="flex flex-col">
                 <div className="flex gap-10">
-                  <p className="text-[#5B7083] text-xs">World</p>
-                  <p className="text-[#5B7083] text-xs">. 1h ago</p>
+                  <p className="text-gray-500 text-xs">World</p>
+                  <p className="text-gray-500 text-xs">. 1h ago</p>
                 </div>
                 <div className="title">
                   <h3 className="font-bold text-sm">
@@ -30,7 +30,7 @@ const Aside_left = () => {
                   </h3>
                 </div>
                 <div>
-                  <p className="text-[#5B7083] text-xs">
+                  <p className="text-gray-500 text-xs">
                     Trending with
                     <span className="pl-2">
                       <a href="#" className="text-[#1DA1F2]">
@@ -47,8 +47,8 @@ const Aside_left = () => {
             <div className="card flex">
               <div className="flex flex-col">
                 <div className="flex gap-10">
-                  <p className="text-[#5B7083] text-xs">Indonesia</p>
-                  <p className="text-[#5B7083] text-xs">. 1h ago</p>
+                  <p className="text-gray-500 text-xs">Indonesia</p>
+                  <p className="text-gray-500 text-xs">. 1h ago</p>
                 </div>
                 <div className="title">
                   <h3 className="font-bold  text-sm">
@@ -56,7 +56,7 @@ const Aside_left = () => {
                   </h3>
                 </div>
                 <div>
-                  <p className="text-[#5B7083] text-xs">
+                  <p className="text-gray-500 text-xs">
                     Trending with
                     <span className="pl-2">
                       <a href="#" className="text-[#1DA1F2]">
@@ -73,8 +73,8 @@ const Aside_left = () => {
             <div className="card flex">
               <div className="flex flex-col">
                 <div className="flex gap-10">
-                  <p className="text-[#5B7083] text-xs">World</p>
-                  <p className="text-[#5B7083] text-xs">. 1h ago</p>
+                  <p className="text-gray-500 text-xs">World</p>
+                  <p className="text-gray-500 text-xs">. 1h ago</p>
                 </div>
                 <div className="title">
                   <h3 className="font-bold  text-sm">
@@ -82,7 +82,7 @@ const Aside_left = () => {
                   </h3>
                 </div>
                 <div>
-                  <p className="text-[#5B7083] text-xs">
+                  <p className="text-gray-500 text-xs">
                     Trending with
                     <span className="pl-2">
                       <a href="#" className="text-[#1DA1F2]">
@@ -97,7 +97,7 @@ const Aside_left = () => {
               </>
             </div>
             <div>
-              <h3 className="text-[#6366F1] text-base font-bold">
+              <h3 className="text-indigo-500 text-base font-bold">
                 <a href="">Show more</a>
               </h3>
             </div>
@@ -106,7 +106,7 @@ const Aside_left = () => {
       </div>
 
       {/* Suggest to Follow */}
-      <div className="mt-5 bg-[#F7F9FA] rounded-2xl w-[350px] h-[250px] p-2 ">
+      <div className="mt-5 bg-slate-50 rounded-2xl  p-2 ">
         <header>
           <h2 className="font-bold text-lg">Who to Follow</h2>
         </header>
@@ -131,14 +131,14 @@ const Aside_left = () => {
                   </div>
                 </div>
                 <div className="date">
-                  <p className="text-xs text-[#5B7083]">@marrianharry</p>
+                  <p className="text-xs text-gray-500">@marrianharry</p>
                 </div>
               </div>
             </div>
             <div className="pl-10">
               <button
                 type="button"
-                className="focus:outline-none text-white bg-[#6366F1] font-medium rounded-full text-sm px-5 py-2.5"
+                className="focus:outline-none text-white bg-indigo-500 font-medium rounded-full text-sm px-5 py-2.5"
               >
                 Follow
               </button>
@@ -165,21 +165,21 @@ const Aside_left = () => {
                   </div>
                 </div>
                 <div className="date">
-                  <p className="text-xs text-[#5B7083]">@nanaaiza</p>
+                  <p className="text-xs text-gray-500">@nanaaiza</p>
                 </div>
               </div>
             </div>
             <div className="pl-16">
               <button
                 type="button"
-                className="focus:outline-none text-white bg-[#6366F1] font-medium rounded-full text-sm px-5 py-2.5"
+                className="focus:outline-none text-white bg-indigo-500 font-medium rounded-full text-sm px-5 py-2.5"
               >
                 Follow
               </button>
             </div>
           </div>
           <div>
-            <h3 className="text-[#6366F1] mt-5 text-base font-bold">
+            <h3 className="text-indigo-500 mt-5 text-base font-bold">
               <a href="">Show more</a>
             </h3>
           </div>
@@ -187,22 +187,22 @@ const Aside_left = () => {
       </div>
       {/* ACCESSIBILITY */}
       <div className="grid grid-cols-3">
-        <p className="text-sm text-[#A5A3A9]">
+        <p className="text-sm text-gray-400">
           <a href="#">About</a>
         </p>
-        <p className="text-sm text-[#A5A3A9] ">
+        <p className="text-sm text-gray-400 ">
           <a href="#">Accessibility</a>
         </p>
-        <p className="text-sm text-[#A5A3A9]">
+        <p className="text-sm text-gray-400">
           <a href="#">Help Center</a>
         </p>
-        <p className="text-sm text-[#A5A3A9] col-span-2">
+        <p className="text-sm text-gray-400 col-span-2">
           <a href="#">Privacy and Terms</a>
         </p>
-        <p className="text-sm text-[#A5A3A9]">
+        <p className="text-sm text-gray-400">
           <a href="#">Advertising</a>
         </p>
-        <p className="text-sm text-[#A5A3A9] col-span-2">
+        <p className="text-sm text-gray-400 col-span-2">
           <a href="#">Business Services</a>
         </p>
       </div>

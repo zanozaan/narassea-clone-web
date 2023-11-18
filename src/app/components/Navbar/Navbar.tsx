@@ -1,68 +1,85 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../assets/Icon Logo/Narrasea_PUTIH_TEXT.svg";
-import HomeIcon from "../../assets/Icon Web/Home_Icon2.svg";
-import VideoIcon from "../../assets/Icon Web/Video_Icon2.svg";
-import MarketIcon from "../../assets/Icon Web/Marketplace_Icon2.svg";
-import CommunityIcon from "../../assets/Icon Web/Community_Icon.svg";
 import SearchIcon from "../../assets/Icon Web/Search_Icon.svg";
-import MessageIcon from "../../assets/Icon Web/ChatCircleDots.svg";
-import NotificationIcon from "../../assets/Icon Web/BellSimpleRinging.svg";
 import img7 from "../../assets/Image/img7.svg";
 
 const Navbar = () => {
   return (
-    <div className=" py-7 bg-white border-[1px] flex justify-evenly content-center items-center sticky top-0 z-20    ">
+    // flex justify-evenly content-center items-center
+    <div className="grid grid-cols-3 gap-4 px-72 py-6 bg-white border-b sticky top-0 z-1">
       {/* LOGO */}
-      <Link href="#">
+      <Link href="#" className="">
         <Image src={Logo} alt="logo" width={200} height={43} />
       </Link>
 
       {/* MENU NAVIGATION */}
-      <div className="flex justify-between content-center">
-        {/* <image src={Home} alt=""/> */}
-        <Link href="#" className="pr-[75px] hover:border-b border-indigo-500">
-          <Image src={HomeIcon} alt="home" width={32} height={32} />
-          {/* <span className="icon-Home_Icon2"></span> */}
-        </Link>
-        <Link href="#" className="pr-[75px] hover:border-b border-indigo-500">
-          <Image src={VideoIcon} alt="video" width={32} height={32} />
-        </Link>
-        <Link href="#" className="pr-[75px] hover:border-b border-indigo-500">
-          <Image src={MarketIcon} alt="market" width={32} height={32} />
-        </Link>
-        <Link href="#" className="pr-[75px] hover:border-b border-indigo-500">
-          <Image src={CommunityIcon} alt="community" width={32} height={32} />
-        </Link>
-        <Link href="#" className=" hover:border-b border-indigo-500">
-          <Image src={SearchIcon} alt="community" width={32} height={32} />
-        </Link>
+      <div className="">
+        <ul className="flex justify-between">
+          <li>
+            <Link href="#">
+              <div className="clearfix pbs text-3xl">
+                <span className="icon-Home_Icon1">
+                  <span className="path1"></span>
+                  <span className="path2"></span>
+                  <span className="path3"></span>
+                </span>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link href="#">
+              <div className="clearfix pbs text-3xl">
+                <span className="icon-Video_Icon2"></span>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link href="#">
+              <div className="clearfix pbs text-3xl">
+                <span className="icon-Marketplace_Icon2"></span>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link href="#">
+              <div className="clearfix pbs text-3xl">
+                <span className="icon-Community_Icon"></span>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="border-indigo-500">
+              <Image src={SearchIcon} alt="community" width={32} height={32} />
+            </Link>
+          </li>
+        </ul>
       </div>
 
       {/* MENU + PROFILE + POST  */}
-      <div className="max-w-[570px] flex justify-between content-center items-center">
+      <div className="flex justify-between">
         {/* POST BUTTON */}
-        <div className="pr-[126px]">
+        <div className="pl-32">
           <button
             type="button"
-            className="focus:outline-none text-white bg-[#6366F1] font-medium w-[96px] h-[32px] rounded-full rounded-bl-none text-sm px-5 py-2.5 flex justify-center content-center items-center"
+            className="focus:outline-none text-white bg-indigo-500 font-medium w-24 h-[32px] rounded-full rounded-bl-none text-sm px-5 py-2.5 flex justify-center content-center items-center"
           >
             Post
           </button>
         </div>
 
         {/* MENU + POST */}
-        <div className="max-w-[350px] flex justify-center gap-5">
+        <div className=" flex justify-center gap-5">
           <Link href="#">
-            <Image src={MessageIcon} alt="message" width={24} height={24} />
+            {/* <Image src={MessageIcon} alt="message" width={24} height={24} /> */}
+            <div className="clearfix pbs text-2xl">
+              <span className="icon-ChatCircleDots"></span>
+            </div>
           </Link>
           <Link href="#">
-            <Image
-              src={NotificationIcon}
-              alt="notification"
-              width={24}
-              height={24}
-            />
+            <div className="clearfix pbs text-2xl">
+              <span className="icon-BellSimpleRinging"></span>
+            </div>
           </Link>
           <Link href="#">
             <Image src={img7} alt="profile" width={28} height={28} />

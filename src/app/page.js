@@ -4,7 +4,7 @@ import Aside_right from "./components/Aside/Aside_right";
 
 export default function Home() {
   return (
-    <div className="mx-[280px] flex justify-between">
+    <div className="grid grid-cols-4 px-80 py-5 bg-white justify-between">
       <Aside_left />
       <Timeline />
       <Aside_right />

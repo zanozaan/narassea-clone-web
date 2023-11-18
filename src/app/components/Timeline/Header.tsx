@@ -20,18 +20,18 @@ const Header = ({ card }) => {
         <div>
           <div className="username flex gap-2">
             <div>
-              <h4 className="font-bold color-[#111827]">{card.name}</h4>
+              <h4 className="font-bold">{card.name}</h4>
             </div>
             <div>
-              <h5 className="text-[#6B7280]">{card.username}</h5>
+              <h5 className="text-gray-500">{card.username}</h5>
             </div>
-            <div className="rounded-full bg-[#59DCEE] text-xs w-[73px] h-5 flex items-center justify-center">
+            <div className="rounded-full bg-cyan-300 text-xs w-[73px] h-5 flex items-center justify-center">
               <Image src={pausIcon} alt="log" />
               <h6 className="text-white">narwhal</h6>
             </div>
           </div>
           <div className="date">
-            <p className="text-xs text-[#6B7280]">September 02 2023, 03:04pm</p>
+            <p className="text-xs text-gray-500">September 02 2023, 03:04pm</p>
           </div>
         </div>
       </div>
