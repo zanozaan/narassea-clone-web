@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-4 px-80 py-5 bg-white justify-between">
       <Aside_left />
-      <Timeline />
+      <Timeline className="hidden w-full sm:block sm:w-auto" />
       <Aside_right />
     </div>
   );

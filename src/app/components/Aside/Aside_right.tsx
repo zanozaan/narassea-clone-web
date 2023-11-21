@@ -11,7 +11,7 @@ import DotsVIcon from "../../assets/Icon Web/Dots_V.svg";
 
 const Aside_right = () => {
   return (
-    <div className="col-span-1 sticky top-0 right-0 h-screen">
+    <div className="hidden xl:block col-span-1 sticky top-0 right-0 h-screen z-0">
       {/* Suggested Trends */}
       <div>
         <div className="bg-slate-50 rounded-2xl p-6">
