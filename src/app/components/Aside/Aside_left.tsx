@@ -10,8 +10,8 @@ import kepitingIcon from "../../assets/Image/kepiting.svg";
 
 const Aside_left = () => {
   return (
-    <div className="hidden xl:block col-span-1 sticky top-0 left-0 h-screen z-0">
-      <div className="bg-slate-50 rounded-2xl  p-6">
+    <div className="hidden lg:block col-span-1 sticky mr-6 top-0 left-0 h-screen z-0">
+      <div className="bg-slate-50 rounded-2xl p-6">
         {/* Suggest Blog */}
         <div>
           <header>

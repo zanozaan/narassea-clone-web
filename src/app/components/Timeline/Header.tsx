@@ -6,7 +6,7 @@ import dotsHIcon from "../../assets/Icon Web/Dots_H.svg";
 
 const Header = ({ card }) => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between overflow-hidden">
       <div className="flex items-center gap-2 mb-4">
         <div className="profile-user">
           <Image

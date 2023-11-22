@@ -9,14 +9,14 @@ const Navbar = () => {
   return (
     <>
       {/* Large screen */}
-      <div className="xl:grid grid-cols-3 gap-4 px-72 py-6 bg-white border-b sticky top-0 z-40  hidden">
+      <div className=" hidden lg:grid grid-cols-3 gap-4 px-72 py-6 bg-white border-b sticky top-0 z-40 ">
         {/* LOGO */}
         <Link href="#" className="lg:block">
           <Image src={Logo} alt="logo" width={200} height={43} />
         </Link>
 
         {/* MENU NAVIGATION */}
-        <div className="xl:block hidden">
+        <div className="hidden lg:block ">
           <ul className="flex justify-between">
             <li>
               <Link href="#">
@@ -69,7 +69,7 @@ const Navbar = () => {
           <div className="pl-32">
             <button
               type="button"
-              className="focus:outline-none text-white bg-indigo-500 font-medium w-24 h-[32px] rounded-full rounded-bl-none text-sm px-5 py-2.5 flex justify-center content-center items-center"
+              className="focus:outline-none text-white bg-indigo-500 font-medium w-24 h-8 rounded-full rounded-bl-none text-sm px-5 py-2.5 flex justify-center content-center items-center"
             >
               Post
             </button>
@@ -95,17 +95,18 @@ const Navbar = () => {
       </div>
 
       {/* Small screen */}
-      <div className="xl:hidden">
+      <div className="lg:hidden">
         {/* LOGO */}
-        <div className="xl:hidden flex flex-col items-center bg-white border-b sticky top-0 z-40 py-2">
+        <div className="flex flex-col items-center bg-white rounded-full border-2 sticky top-0 z-40 py-2 lg:hidden ">
           <Link href="#" className="lg:block">
             <Image src={Logo2} alt="logo" width={43} height={43} />
           </Link>
         </div>
 
         {/* MENU NAVIGATION */}
-        <div className="fixed bottom-0 w-full bg-white border-t py-2 z-40">
-          <ul className="flex justify-between w-full px-32 ">
+        <div className="fixed bottom-0 w-full bg-white border-t py-2 z-40 lg:hidden">
+          {/* <div className="flex flex-col items-center bg-white rounded-full border-2 z-40 py-2 lg:hidden "> */}
+          <ul className="flex justify-between w-full px-10 sticky bottom-0">
             <li>
               <Link href="#">
                 <div className="clearfix pbs text-3xl">

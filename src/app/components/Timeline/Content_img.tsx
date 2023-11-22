@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Content_img = ({ card }) => {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       {card.img && (
         <div className="content-img">
           <Image src={card.img} alt="content" className="w-full rounded" />

@@ -9,8 +9,8 @@ import GiftBox from "../../assets/Icon Web/Gift_Box_Icon.svg";
 
 const Comment = ({ card }) => {
   return (
-    <div>
-      <div>
+    <>
+      <div className="sm:box-content">
         <div className="flex justify-evenly content-center">
           {card.comments.map((comment, index) => (
             <div key={index} className="flex gap-x-16">
@@ -74,7 +74,7 @@ const Comment = ({ card }) => {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
