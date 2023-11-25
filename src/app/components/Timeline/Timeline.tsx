@@ -80,7 +80,7 @@ Play, earn, and conquer in our gamified rewards! `,
   ];
 
   return (
-    <div className="lg:col-span-2 border-x-2 py-7 px-4 xs:col-span-2 overflow-hidden">
+    <div className="lg:col-span-2 border-x-2 py-6 px-4 xs:col-span-2 overflow-hidden xs:mb-14">
       {cards.map((card) => (
         <div key={card.id} className="py-2">
           <Header card={card} />
