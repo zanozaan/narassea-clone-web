@@ -1,4 +1,8 @@
+"use client";
+
 import React from "react";
+import { useState } from "react";
+import ModalComponent from "../Modal/ModalPostImg/ModalComponent";
 import Header from "./Header";
 import Content_img from "./Content_img";
 import Comment from "./Comment";
@@ -79,15 +83,39 @@ Play, earn, and conquer in our gamified rewards! `,
     },
   ];
 
+  const [selectedCard, setSelectedCard] = useState(null);
+
+  const openModal = (card) => {
+    setSelectedCard(card);
+  };
+
+  const closeModal = () => {
+    setSelectedCard(null);
+  };
+
   return (
-    <div className="lg:col-span-2 border-x-2 py-6 px-4 xs:col-span-2 overflow-hidden xs:mb-14">
+    <div className=" lg:col-span-2 border-x-2 py-6 px-4 xs:col-span-2 overflow-hidden xs:mb-14">
       {cards.map((card) => (
-        <div key={card.id} className="py-2">
+        <div
+          key={card.id}
+          className={`py-2 ${
+            selectedCard === card ? "hover:bg-slate-200" : ""
+          } lg:col-span-2 px-4 xs:col-span-2 overflow-hidden xs:mb-14`}
+          onClick={() => openModal(card)}
+        >
           <Header card={card} />
           <Content_img card={card} />
           <Comment card={card} />
         </div>
       ))}
+
+      {selectedCard && (
+        <ModalComponent
+          isOpen={true}
+          onClose={closeModal}
+          card={selectedCard}
+        />
+      )}
     </div>
   );
 };

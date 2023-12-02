@@ -26,6 +26,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Tag_addaccount_Icon:before {
+  content: "\e953";
+}
+.icon-vertical_align_bottom:before {
+  content: "\e900";
+}
+.icon-favorite_outline:before {
+  content: "\e900";
+}
+.icon-keyboard_arrow_down:before {
+  content: "\e95f";
+}
+.icon-keyboard_arrow_up:before {
+  content: "\e960";
+}
+
 .icon-Narrasea_PUTIH .path1:before {
   content: "\e900";
   color: rgb(252, 252, 252);

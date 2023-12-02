@@ -106,7 +106,7 @@ const Aside_left = () => {
       </div>
 
       {/* Suggest to Follow */}
-      <div className="mt-5 bg-slate-50 rounded-2xl  p-2 ">
+      <div className="mt-5 bg-slate-50 rounded-2xl p-6 ">
         <header>
           <h2 className="font-bold text-lg">Who to Follow</h2>
         </header>
